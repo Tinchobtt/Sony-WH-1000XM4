@@ -361,6 +361,9 @@ footer{
 .social-link i{
     margin-right: 1em;
 }
+.social-item:last-child i{
+    margin-right: 0;
+}
 @media (min-width: 768px){
     .home-img{
         position: unset;
