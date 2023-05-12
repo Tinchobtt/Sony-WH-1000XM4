@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="design.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="assets/logo/logo.png" alt="logotipo">
+            <a href="index.html">
+                <img src="assets/logo/logo.png" alt="logotipo">
+            </a>
         </div>
         <nav>
             <ul class="nav-bar">
-                <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-headphones"></i>Product</a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-info"></i>Specifications</a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="nav-item"><a href="#product" class="nav-link"><i class="fa-solid fa-headphones"></i>Product</a></li>
+                <li class="nav-item"><a href="#specifications" class="nav-link"><i class="fa-solid fa-info"></i>Specifications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-address-book"></i>Contact</a></li>
             </ul>
         </nav>
         <div class="bars-menu">
@@ -27,7 +30,7 @@
         </div>
     </header>
     <main>
-        <section class="home">
+        <section id="home">
             <div class="home-img">
                 <img src="assets/headphones/b1.png" alt="">
             </div>
@@ -47,12 +50,7 @@
             <p class="text">Discover how the WH-1000XM4 combine our best noise cancellation technology with the best definition of audio for an unparalleled experience.</p>
             <video src="assets/headphones/video.mp4" autoplay loop controls></video>
         </section>
-        <section class="specifications">
-            <h3 class="title">Main features</h3>
-            <p class="text">advanced noise cancellation</p>
-            <img src="assets/people/7e42017a-6486-4852-94bc-45ecd9d5b1ad.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="">
-        </section>
-        <section class="product">
+        <section id="product" data-aos="fade-up">
             <h3 class="title">Explore Our Colors</h3>
             <div class="product-colors">
                 <div class="product-box">
@@ -101,13 +99,59 @@
                     <button class="arrow-right slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
-            <div class="product-360">
+            <div class="product-360" data-aos="fade-up">
                 <h3 class="title">360° View</h3>
                 <img src="assets/headphones/360.gif" alt="">
             </div>
         </section>
+        <section id="specifications">
+            <h3 class="title">Main features</h3>
+            <div class="group">
+                <div class="group-content" data-aos="fade-right">
+                    <h4 class="sub-title">Advanced Noise Cancellation</h4>
+                    <p class="text">Ya sea que esté en un vuelo de larga distancia o sentado en un café, los auriculares WH-1000XM4 brindan un rendimiento avanzado de cancelación de ruido, exprimiendo aún más las frecuencias medias y altas.</p>
+                </div>
+                <img src="assets/people/1.jpg" alt="" data-aos="fade-left">
+            </div>
+            <div id="second-group" class="group">
+                <div class="group-content" data-aos="fade-left">
+                    <h4 class="sub-title">Superior Sound Quality</h4>
+                    <p class="text">LDAC transmits approximately three times as much data (maximum transfer rate: 990 kbps) as conventional BLUETOOTH® audio, allowing you to enjoy High-Resolution Audio content with exceptional quality, similar to that of a wired connection.</p>
+                </div>
+                <img src="assets/people/2.jpg" alt="" data-aos="fade-right">
+            </div>
+            <div class="group">
+                <div class="group-content" data-aos="fade-right">
+                    <h4 class="sub-title">Smart Listening Technology</h4>
+                    <p class="text">Smart technologies to create an unhindered hands-free listening experience. For example, just speak to automatically pause music thanks to Speak-to-Chat, and with proximity and acceleration sensors, playback adapts based on whether you're wearing headphones or not.</p>
+                </div>
+                <img src="assets/people/3.jpg" alt="" data-aos="fade-left">
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="nav-footer">
+            <ul class="nav-bar-footer">
+                <li class="nav-footer-item"><a href="" class="nav-footer-link">Home</a></li>
+                <li class="nav-footer-item"><a href="" class="nav-footer-link">Product</a></li>
+                <li class="nav-footer-item"><a href="" class="nav-footer-link">Specifications</a></li>
+                <li class="nav-footer-item"><a href="" class="nav-footer-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="logo-footer-container">
+            <img src="assets/logo/logo.png" alt="logotipo">
+        </div>
+        <div class="redes-footer-container">
+            <ul class="social-bar">
+                <li class="social-item"><a href="https://www.instagram.com/sony/" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="social-item"><a href="https://twitter.com/Sony" class="social-link" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="social-item"><a href="https://www.facebook.com/Sony/" class="social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="social-item"><a href="https://www.sony.it/" class="social-link" target="_blank"><i class="fa-solid fa-globe"></i></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/95134b7c36.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

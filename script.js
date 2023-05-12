@@ -1,3 +1,5 @@
+AOS.init();
+
 const nav = document.querySelector('nav');
 const barsMenu = document.querySelector('.bars-menu');
 const bar1 = document.querySelector('.line1-bar');
