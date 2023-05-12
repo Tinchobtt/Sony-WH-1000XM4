@@ -6,6 +6,13 @@ const bar1 = document.querySelector('.line1-bar');
 const bar2 = document.querySelector('.line2-bar');
 const bar3 = document.querySelector('.line3-bar');
 
+const nav_links = document.querySelectorAll('.nav-link');
+nav_links.forEach((link)=>{
+    link.addEventListener('click', ()=>{
+        nav.classList.toggle('showNav');
+    })
+})
+
 barsMenu.addEventListener('click', ()=>{
     bar1.classList.toggle('activeLine1');
     bar2.classList.toggle('activeLine2');
@@ -46,7 +53,6 @@ sliders.forEach((slider, index) => {
 });
 
 let video = document.querySelector('#video video');
-video.pause();
 
 window.addEventListener('scroll',()=> {
     let videoContainer = document.querySelector('#video');

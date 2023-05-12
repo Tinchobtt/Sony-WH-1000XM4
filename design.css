@@ -26,7 +26,9 @@ section{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
+    height: 5rem;
     position: fixed;
     top: 0;
     background-color: var(--negro-2);
@@ -55,10 +57,7 @@ header{
     margin: 1em 0 2em;
 }
 .logo-container{
-    display: flex;
-    align-items: center;
     width: 5rem;
-    height: 2rem;
     margin: 1em;
 }
 .logo-container img{
@@ -68,8 +67,9 @@ header{
 .bars-menu{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 5em;
+    height: 100%;
     padding: 1em;
     cursor: pointer;
     z-index: 5;
@@ -104,10 +104,10 @@ header{
 }
 @keyframes bar1{
     25%{
-        transform: translateY(.7em);
+        transform: translateY(.8em);
     }
     100%{
-        transform: translateY(.7em) rotate(-405deg);
+        transform: translateY(.8em) rotate(-405deg);
     }
 }
 @keyframes bar3{
@@ -402,6 +402,9 @@ footer{
         height: 100%;
         margin: 0;
         margin-right: 4em;
+    }
+    .showNav{
+        transform: translateX(0);
     }
     .nav-bar i{
         display: none;
