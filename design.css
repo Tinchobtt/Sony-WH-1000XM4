@@ -24,6 +24,9 @@ body{
 section{
     padding: 1em;
 }
+#product, #specifications{
+    padding-top: 5rem!important;
+}
 header{
     display: flex;
     justify-content: space-between;

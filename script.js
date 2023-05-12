@@ -51,7 +51,7 @@ sliders.forEach((slider, index) => {
         }, 500)
     })
 });
-
+/*
 let video = document.querySelector('#video video');
 
 window.addEventListener('scroll',()=> {
@@ -64,4 +64,4 @@ window.addEventListener('scroll',()=> {
     } else {
         video.pause();
     }
-});
+});*/
